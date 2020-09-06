@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
+canvas
+{
+  display:block;
+}
+*{
+  box-sizing: border-box;
+ text-decoration: none;
+  list-style: none;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+background: linear-gradient(180deg,#008aff,#ff137d), url("./img/rose.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-blend-mode: screen;
+
+
+
+
+}
+section
+{
+  width: 100%;
+  height: 100vh;
+
+  background: -webkit-linear-gradient(#180deg, #008aff, #ff137d);
+}
+.header-container
+{
+  position: fixed;
+  top:0;
+  left:0
+  overflow: hidden;
+  height: 70px;
+  width: 100%;
+
+  background: transparent;
+z-index: 2;
+
+}
+
+.inner-logo
+{
+  position:absolute;
+  width: 50px;
+  height: 50px;
+
+  margin: 10px 0 0 50px;
+
+
+
+}
+.inner-logo img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+    border-radius: 50%;
+}
+
+
+.nav-box
+{
+position: absolute;
+  height: 80px;
+  width: 1000px;
+
+  top: 0;
+  left: 40%;
+  transition: top 0.8s;
+
+
+}
+.nav-box a
+{
+  color:white;
+  padding: 20px;
+  width: 150px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: -webkit-sticky;
+
+
+
+
+
+
+}
+
+.nav-box a:hover
+{
+
+
+
+  background:#a142b8;
+
+
+
+}
+
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+
+}
+
+.inner-div-one
+{
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  z-index: 0;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right:0;
+  height: 100%;
+
+  background: linear-gradient(180deg,#008aff,#ff137d), url('rose.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+
+
+
+}
+
+.inner-div-one h1
+{
+  font-size:2em;
+  font-weight: bold;
+
+  color: #fff;
+
+
+  /*background: -webkit-linear-gradient(#800080, #EE82EE, #FF00FF );
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;*/
+
+}
+
+
+ .inner-div-one p{
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  margin:0;
+
+  text-align: justify;
+
+}
+.inner-div-one img
+{
+  border-radius: 10px 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    position: relative;
+    max-width: 350px
+
+}
+
+
+
+.wave
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+
+
+/*.button
+
+{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px solid #a142b8;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+  background: #fff;
+  color: #a142b8;
+    font-size: 1em;
+    font-weight: 600;
+
+    position: relative;
+    top: 250px;
+    left: 410px;
+
+}
+.button:hover
+{
+  background:#a142b8;
+  color: #fff;
+
+}*/
+
+
+
+.div1-sec2
+{
+
+
+  position: relative;
+  top: 0;
+  left: 0;
+
+
+
+
+
+
+
+}
+
+#splhead
+{
+  position:relative;
+  top: 0;
+  font-size: 4em;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  margin: 35% auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Pacifico', cursive;
+  background: url('./img/paint.jpeg');
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text 7.5s linear infinite;
+
+
+
+}
+@keyframes text {
+  0%
+  {
+    background-position: 0% 50%;
+    transform: rotateX(-16deg) rotateY(60deg);
+    top: 10%;
+
+
+  }
+ 50%
+ {
+   background-position: 100% 50%;
+     transform: rotateX(60deg) rotateY(-16deg);
+     top: 40%;
+
+ }
+ 100%
+ {
+   background-position: 50% 0%;
+   transform: rotateX(-16deg) rotateY(60deg);
+   top: 0%;
+
+ }
+
+}
+
+
+
+
+
+
+.div1-sec3
+{
+
+  position: relative;
+  top: 25%;
+  left: 43%;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+
+}
+@keyframes animate {
+
+  0%
+{
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+100%
+{
+transform: perspective(1000px) rotateY(360deg);
+}
+
+}
+
+.div1-sec3 span
+{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+
+}
+
+.div1-sec3 span img
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#page4
+{
+  width: 100%;
+  height: 100%;
+}
+
+#page4 h1
+{
+  position: relative;
+  padding-top: 50px;
+  padding-bottom:50px;
+  font-size:2em;
+  font-weight: bold;
+
+  color: #fff;
+  text-align: center;
+}
+
+#page4
+{
+  width: 100%;
+  height: 100%;
+}
+.parallax
+{
+  background: url('./img/pinkflower.jpg');
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+/*  .div1-sec4
+  {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
+
+
+  }*/
+
+
+.one-ball
+{
+  width: 70px;
+  height: 70px;
+
+
+      position: relative;
+      top: 20%;
+      left: 50%;
+      border-radius: 50%;
+      background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+      );
+      animation: fade 5s linear infinite;
+      animation-timing-function: ease-in;
+
+
+
+
+
+}
+
+.two-ball
+{
+  width: 70px;
+  height: 70px;
+
+      position: relative;
+      top:20%;
+      left: 20%;
+      border-radius: 50%;
+      background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+      );
+      animation: fade 3s linear infinite;
+      animation-timing-function: ease-out;
+
+
+
+}
+
+
+.three-ball
+{
+  width: 70px;
+  height: 70px;
+
+
+      position: relative;
+      top: 20%;
+      left: 85%;
+      border-radius: 50%;
+      background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+      );
+      animation: fade 6s linear infinite;
+      animation-timing-function:ease-in-out;
+
+    }
+
+    @keyframes fade {
+
+      0%
+      {
+        top:10%;
+
+      }
+      50%
+      {
+        top: 50%;
+      }
+      100%
+      {
+        top:0;
+      }
+
+    }
